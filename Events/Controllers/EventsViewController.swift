@@ -12,6 +12,7 @@ class EventsViewController: UIViewController {
 
     @IBOutlet weak var eventsTableView: UITableView! {
         didSet {
+            eventsTableView.delegate = self
             eventsTableView.dataSource = self
         }
     }
@@ -37,5 +38,14 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let eventDetailVC = EventDetailVC()
+        self.navigationController?.pushViewController(eventDetailVC, animated: true)
+    }
+    
+    @objc func backButtonTapped(_ sender: UIBarButtonItem) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
