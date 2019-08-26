@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             let mainVC = EventsViewController()
             navigationController = UINavigationController(rootViewController: mainVC)
-            let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
+            let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: #selector(createButtonTapped(_:)))
             let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil)
             navigationController?.navigationBar.topItem?.rightBarButtonItem = addButton
             navigationController?.navigationBar.topItem?.leftBarButtonItem = backButton
@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         // Override point for customization after application launch.
         return true
+    }
+    
+    @objc func createButtonTapped(_ sender: UIBarButtonItem) {
+        let createEventVC = CreateEventVC()
+        self.navigationController?.pushViewController(createEventVC, animated: true)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
