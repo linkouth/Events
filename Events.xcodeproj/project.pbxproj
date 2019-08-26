@@ -15,6 +15,10 @@
 		CEE694862311578F008CA7ED /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE694842311578F008CA7ED /* EventTableViewCell.xib */; };
 		CEE694892311657A008CA7ED /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE694872311657A008CA7ED /* EventDetailVC.swift */; };
 		CEE6948A2311657A008CA7ED /* EventDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE694882311657A008CA7ED /* EventDetailVC.xib */; };
+		CEE6948D2312BD62008CA7ED /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6948B2312BD62008CA7ED /* CreateEventVC.swift */; };
+		CEE6948E2312BD62008CA7ED /* CreateEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6948C2312BD62008CA7ED /* CreateEventVC.xib */; };
+		CEE6949123144FBA008CA7ED /* HallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6948F23144FBA008CA7ED /* HallTableViewCell.swift */; };
+		CEE6949223144FBA008CA7ED /* HallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6949023144FBA008CA7ED /* HallTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		CEE694842311578F008CA7ED /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		CEE694872311657A008CA7ED /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		CEE694882311657A008CA7ED /* EventDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailVC.xib; sourceTree = "<group>"; };
+		CEE6948B2312BD62008CA7ED /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
+		CEE6948C2312BD62008CA7ED /* CreateEventVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateEventVC.xib; sourceTree = "<group>"; };
+		CEE6948F23144FBA008CA7ED /* HallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallTableViewCell.swift; sourceTree = "<group>"; };
+		CEE6949023144FBA008CA7ED /* HallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HallTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,9 @@
 				CEE6948023115329008CA7ED /* EventsViewController.xib */,
 				CEE694832311578F008CA7ED /* EventTableViewCell.swift */,
 				CEE694842311578F008CA7ED /* EventTableViewCell.xib */,
+				CEE6948C2312BD62008CA7ED /* CreateEventVC.xib */,
+				CEE6948F23144FBA008CA7ED /* HallTableViewCell.swift */,
+				CEE6949023144FBA008CA7ED /* HallTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +104,7 @@
 			children = (
 				CEE694872311657A008CA7ED /* EventDetailVC.swift */,
 				CEE6947F23115329008CA7ED /* EventsViewController.swift */,
+				CEE6948B2312BD62008CA7ED /* CreateEventVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE6949223144FBA008CA7ED /* HallTableViewCell.xib in Resources */,
+				CEE6948E2312BD62008CA7ED /* CreateEventVC.xib in Resources */,
 				CEE6948A2311657A008CA7ED /* EventDetailVC.xib in Resources */,
 				CEE694862311578F008CA7ED /* EventTableViewCell.xib in Resources */,
 				CEE69470231026DC008CA7ED /* Assets.xcassets in Resources */,
@@ -169,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE6949123144FBA008CA7ED /* HallTableViewCell.swift in Sources */,
 				CEE694892311657A008CA7ED /* EventDetailVC.swift in Sources */,
+				CEE6948D2312BD62008CA7ED /* CreateEventVC.swift in Sources */,
 				CEE694852311578F008CA7ED /* EventTableViewCell.swift in Sources */,
 				CEE69469231026DC008CA7ED /* AppDelegate.swift in Sources */,
 				CEE6948123115329008CA7ED /* EventsViewController.swift in Sources */,
