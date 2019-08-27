@@ -72,6 +72,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="iFK-KY-ORC" id="xv8-Tl-z3L"/>
+                <outlet property="authorPhoneLabel" destination="iFK-KY-ORC" id="TxP-xN-JUu"/>
+                <outlet property="nameLabel" destination="YYW-tO-4r2" id="fly-Ow-fvj"/>
+                <outlet property="startTimeLabel" destination="pSH-CE-boM" id="Vjn-Nq-H9h"/>
+                <outlet property="statusImage" destination="Bph-vs-Cuw" id="R1m-oT-Qme"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

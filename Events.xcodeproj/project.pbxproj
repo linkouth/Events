@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CEE69469231026DC008CA7ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE69468231026DC008CA7ED /* AppDelegate.swift */; };
-		CEE69470231026DC008CA7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE6946F231026DC008CA7ED /* Assets.xcassets */; };
 		CEE6948123115329008CA7ED /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6947F23115329008CA7ED /* EventsViewController.swift */; };
 		CEE6948223115329008CA7ED /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6948023115329008CA7ED /* EventsViewController.xib */; };
 		CEE694852311578F008CA7ED /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE694832311578F008CA7ED /* EventTableViewCell.swift */; };
@@ -19,12 +18,13 @@
 		CEE6948E2312BD62008CA7ED /* CreateEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6948C2312BD62008CA7ED /* CreateEventVC.xib */; };
 		CEE6949123144FBA008CA7ED /* HallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6948F23144FBA008CA7ED /* HallTableViewCell.swift */; };
 		CEE6949223144FBA008CA7ED /* HallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE6949023144FBA008CA7ED /* HallTableViewCell.xib */; };
+		CEE694962315A458008CA7ED /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE694952315A458008CA7ED /* Event.swift */; };
+		CEE694982315BEB3008CA7ED /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE694972315BEB3008CA7ED /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEE69465231026DC008CA7ED /* Events.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Events.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE69468231026DC008CA7ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEE6946F231026DC008CA7ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE69474231026DC008CA7ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE6947F23115329008CA7ED /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		CEE6948023115329008CA7ED /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
@@ -36,6 +36,8 @@
 		CEE6948C2312BD62008CA7ED /* CreateEventVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateEventVC.xib; sourceTree = "<group>"; };
 		CEE6948F23144FBA008CA7ED /* HallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallTableViewCell.swift; sourceTree = "<group>"; };
 		CEE6949023144FBA008CA7ED /* HallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HallTableViewCell.xib; sourceTree = "<group>"; };
+		CEE694952315A458008CA7ED /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CEE694972315BEB3008CA7ED /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +74,8 @@
 				CEE6947C23115265008CA7ED /* Controllers */,
 				CEE6947A23115257008CA7ED /* Models */,
 				CEE6947B2311525E008CA7ED /* Views */,
-				CEE6946F231026DC008CA7ED /* Assets.xcassets */,
 				CEE69474231026DC008CA7ED /* Info.plist */,
+				CEE694972315BEB3008CA7ED /* Media.xcassets */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -81,6 +83,7 @@
 		CEE6947A23115257008CA7ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CEE694952315A458008CA7ED /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 				CEE6948E2312BD62008CA7ED /* CreateEventVC.xib in Resources */,
 				CEE6948A2311657A008CA7ED /* EventDetailVC.xib in Resources */,
 				CEE694862311578F008CA7ED /* EventTableViewCell.xib in Resources */,
-				CEE69470231026DC008CA7ED /* Assets.xcassets in Resources */,
+				CEE694982315BEB3008CA7ED /* Media.xcassets in Resources */,
 				CEE6948223115329008CA7ED /* EventsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +191,7 @@
 				CEE6948D2312BD62008CA7ED /* CreateEventVC.swift in Sources */,
 				CEE694852311578F008CA7ED /* EventTableViewCell.swift in Sources */,
 				CEE69469231026DC008CA7ED /* AppDelegate.swift in Sources */,
+				CEE694962315A458008CA7ED /* Event.swift in Sources */,
 				CEE6948123115329008CA7ED /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

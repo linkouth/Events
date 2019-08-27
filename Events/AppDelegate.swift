@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let window = window {
             let mainVC = EventsViewController()
             navigationController = UINavigationController(rootViewController: mainVC)
-            let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: #selector(createButtonTapped(_:)))
-            let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: nil, action: nil)
+            let addButton = UIBarButtonItem(image: UIImage(named: "Add New"), style: .plain, target: nil, action: #selector(createButtonTapped(_:)))
+            let backButton = UIBarButtonItem(image: UIImage(named: "Left Arrow"), style: .plain, target: nil, action: nil)
             navigationController?.navigationBar.topItem?.rightBarButtonItem = addButton
             navigationController?.navigationBar.topItem?.leftBarButtonItem = backButton
             window.rootViewController = navigationController
