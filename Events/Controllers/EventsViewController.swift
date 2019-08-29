@@ -63,10 +63,13 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = eventsTableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as? EventTableViewCell {
             let event = events[indexPath.row]
-            if event.status == 2 {
-                cell.statusImage.image = UIImage(named: "Unchecked CheckBox")
-            } else {
-                cell.statusImage.image = UIImage(named: "Checked CheckBox")
+            switch event.status {
+                case 2 :
+                    cell.statusImage.image = UIImage(named: "Unchecked CheckBox")
+                case 1:
+                    cell.statusImage.image = UIImage(named: "Checked CheckBox")
+                default:
+                    cell.statusImage.image = UIImage(named: "Unconfirmed CheckBox")
             }
             if let startTimestampDate = event.startDate {
                 let startDate = Date(timeIntervalSince1970: TimeInterval(startTimestampDate))
