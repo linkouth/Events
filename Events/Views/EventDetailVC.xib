@@ -12,6 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventDetailVC" customModule="Events" customModuleProvider="target">
             <connections>
+                <outlet property="authorNameLabel" destination="eX3-pN-AhE" id="VoX-CZ-roO"/>
+                <outlet property="authorPhoneLabel" destination="LLF-xr-NuN" id="zKf-Qc-Pqm"/>
+                <outlet property="dateLabel" destination="ha6-9L-peC" id="0xB-wU-eTN"/>
+                <outlet property="descriptionLabel" destination="hYm-VV-Sib" id="QSX-IE-C8C"/>
+                <outlet property="durationLabel" destination="jOY-zu-hAD" id="lO6-1D-nPC"/>
+                <outlet property="endTimeLabel" destination="E3e-jc-8eo" id="5cv-bc-ZFB"/>
+                <outlet property="roomNameLabel" destination="HQE-ES-FnN" id="CLQ-N7-R9l"/>
+                <outlet property="startTimeLabel" destination="Eug-lb-hWK" id="gai-iG-MEC"/>
+                <outlet property="statusLabel" destination="Fts-LB-luk" id="o6P-6L-qhI"/>
                 <outlet property="timeView" destination="AZo-g8-314" id="RZU-DT-Prm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

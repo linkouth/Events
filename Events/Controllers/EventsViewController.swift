@@ -90,6 +90,7 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let eventDetailVC = EventDetailVC()
+        eventDetailVC.eventId = events[indexPath.row].id
         self.navigationController?.pushViewController(eventDetailVC, animated: true)
     }
     
