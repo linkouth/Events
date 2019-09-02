@@ -21,8 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-2o-9fe">
-                    <rect key="frame" x="0.0" y="44" width="414" height="1000"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7w-2o-9fe">
+                    <rect key="frame" x="0.0" y="44" width="414" height="832"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Забронировать" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-nf-OVT">
                             <rect key="frame" x="24" y="8" width="169" height="29"/>
@@ -31,7 +31,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hCl-Q3-27T">
-                            <rect key="frame" x="24" y="62" width="224" height="52"/>
+                            <rect key="frame" x="24" y="62" width="366" height="52"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y2G-Bf-nQY">
                                     <rect key="frame" x="17" y="18" width="16" height="16"/>
@@ -47,7 +47,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gwY-xi-5bE">
-                                    <rect key="frame" x="191" y="18" width="16" height="16"/>
+                                    <rect key="frame" x="333" y="18" width="16" height="16"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="5VD-1a-83K"/>
                                         <constraint firstAttribute="height" constant="16" id="hWA-BX-FNB"/>
@@ -67,7 +67,7 @@
                             </constraints>
                         </view>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-AB-2ZC">
-                            <rect key="frame" x="24" y="138" width="224" height="240"/>
+                            <rect key="frame" x="24" y="138" width="366" height="240"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="240" id="ilf-7u-oGe"/>
@@ -75,7 +75,7 @@
                             <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIR-OU-GoW">
-                            <rect key="frame" x="24" y="396" width="224" height="302"/>
+                            <rect key="frame" x="24" y="396" width="366" height="302"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sNd-1t-ijP">
                                     <rect key="frame" x="8" y="18" width="22" height="24"/>
@@ -94,7 +94,7 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-ni-KTG">
-                                    <rect key="frame" x="8" y="68" width="203" height="3"/>
+                                    <rect key="frame" x="8" y="68" width="345" height="3"/>
                                     <color key="backgroundColor" red="0.1764705882352941" green="0.56470588235294117" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="3" id="bkm-PC-IuG"/>
@@ -117,14 +117,14 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeY-PT-tSi">
-                                    <rect key="frame" x="8" y="152" width="203" height="1"/>
+                                    <rect key="frame" x="8" y="152" width="345" height="1"/>
                                     <color key="backgroundColor" red="0.90196078431372551" green="0.90588235294117647" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="1" id="SWB-ga-5aj"/>
                                     </constraints>
                                 </view>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Описание мероприятия" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o0p-ig-oLY">
-                                    <rect key="frame" x="8" y="175" width="203" height="105"/>
+                                    <rect key="frame" x="8" y="175" width="345" height="105"/>
                                     <color key="textColor" red="0.6470588235294118" green="0.64313725490196072" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -154,7 +154,7 @@
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byo-t4-bGK">
-                            <rect key="frame" x="67.5" y="729" width="137" height="48"/>
+                            <rect key="frame" x="138.5" y="729" width="137" height="48"/>
                             <color key="backgroundColor" red="0.1764705882352941" green="0.56470588235294117" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="Fby-ZF-8iA"/>
@@ -168,30 +168,34 @@
                     <constraints>
                         <constraint firstItem="hCl-Q3-27T" firstAttribute="top" secondItem="jhI-nf-OVT" secondAttribute="bottom" constant="25" id="0vd-Bs-xnK"/>
                         <constraint firstItem="ejM-AB-2ZC" firstAttribute="leading" secondItem="V7w-2o-9fe" secondAttribute="leading" constant="24" id="23d-L3-2eH"/>
+                        <constraint firstItem="hCl-Q3-27T" firstAttribute="centerX" secondItem="V7w-2o-9fe" secondAttribute="centerX" id="2V4-x3-diP"/>
                         <constraint firstItem="UIR-OU-GoW" firstAttribute="top" secondItem="ejM-AB-2ZC" secondAttribute="bottom" constant="18" id="BNz-P5-PMW"/>
                         <constraint firstItem="Byo-t4-bGK" firstAttribute="top" secondItem="UIR-OU-GoW" secondAttribute="bottom" constant="31" id="CPP-mn-Ryx"/>
                         <constraint firstItem="ejM-AB-2ZC" firstAttribute="centerX" secondItem="Byo-t4-bGK" secondAttribute="centerX" id="Ihm-tC-67E"/>
-                        <constraint firstAttribute="bottom" secondItem="ejM-AB-2ZC" secondAttribute="bottom" constant="622" id="J2P-4o-8kR"/>
+                        <constraint firstItem="ejM-AB-2ZC" firstAttribute="centerX" secondItem="V7w-2o-9fe" secondAttribute="centerX" id="NnP-xD-kBV"/>
                         <constraint firstAttribute="trailing" secondItem="hCl-Q3-27T" secondAttribute="trailing" constant="24" id="Omc-QS-usi"/>
-                        <constraint firstAttribute="height" constant="1000" id="UZO-Vm-7rm"/>
                         <constraint firstItem="jhI-nf-OVT" firstAttribute="top" secondItem="V7w-2o-9fe" secondAttribute="top" constant="8" id="aIK-T2-fk7"/>
                         <constraint firstItem="ejM-AB-2ZC" firstAttribute="leading" secondItem="UIR-OU-GoW" secondAttribute="leading" id="c0v-cc-uye"/>
                         <constraint firstAttribute="trailing" secondItem="ejM-AB-2ZC" secondAttribute="trailing" constant="24" id="cfj-Yk-s46"/>
+                        <constraint firstAttribute="bottom" secondItem="Byo-t4-bGK" secondAttribute="bottom" constant="223" id="faL-eM-2BZ"/>
                         <constraint firstItem="jhI-nf-OVT" firstAttribute="leading" secondItem="V7w-2o-9fe" secondAttribute="leading" constant="24" id="fen-A1-9Re"/>
                         <constraint firstItem="hCl-Q3-27T" firstAttribute="leading" secondItem="V7w-2o-9fe" secondAttribute="leading" constant="24" id="igT-J1-35O"/>
+                        <constraint firstItem="UIR-OU-GoW" firstAttribute="centerX" secondItem="V7w-2o-9fe" secondAttribute="centerX" id="lo2-xX-Niq"/>
                         <constraint firstItem="ejM-AB-2ZC" firstAttribute="top" secondItem="hCl-Q3-27T" secondAttribute="bottom" constant="24" id="oc1-Tb-ett"/>
                         <constraint firstItem="ejM-AB-2ZC" firstAttribute="trailing" secondItem="UIR-OU-GoW" secondAttribute="trailing" id="q2f-E3-sE8"/>
+                        <constraint firstItem="Byo-t4-bGK" firstAttribute="centerX" secondItem="V7w-2o-9fe" secondAttribute="centerX" id="uxV-KL-UBd"/>
                     </constraints>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V7w-2o-9fe" secondAttribute="trailing" id="2HT-8I-a0o"/>
+                <constraint firstAttribute="bottom" secondItem="V7w-2o-9fe" secondAttribute="bottom" constant="20" id="IEs-SA-iGZ"/>
                 <constraint firstItem="V7w-2o-9fe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LhI-ji-pbn"/>
                 <constraint firstItem="V7w-2o-9fe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="u52-MH-27K"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+            <point key="canvasLocation" x="47.826086956521742" y="158.70535714285714"/>
         </view>
     </objects>
 </document>
